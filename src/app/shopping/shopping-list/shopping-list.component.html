@@ -1,0 +1,12 @@
+<app-shopping-edit (toList)="dateFromEdit($event)"></app-shopping-edit>
+<ul class="list-group">
+    <li class="list-group-item" *ngFor="let ingred of ingredientList">
+        <div class="d-flex justify-content-between">
+            <div>
+                <h1>{{ingred.ingName}}<span class="fonts">{{ingred.ingBrand}}</span></h1>
+            </div>
+            <div><h1>{{ingred.ingQty}}</h1></div>
+        </div>
+    </li>
+</ul>
+

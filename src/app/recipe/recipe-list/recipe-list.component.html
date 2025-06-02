@@ -1,0 +1,6 @@
+<!--<p>recipe-list works!</p>-->
+<div class="list-group">
+<app-recipe-item [eachItem]="recipe" *ngFor="let recipe of recipeList" (sendingItem)=catchEvent($event)>
+
+</app-recipe-item>
+</div>

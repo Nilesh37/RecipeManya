@@ -1,0 +1,13 @@
+<p>recipe works!</p>
+<div class="row">
+    <div class="col-sm-6">
+        <app-recipe-list (sendingToList)="catchEventFromList($event)"></app-recipe-list>
+    </div>
+    <div class="col-sm-6">
+        <app-recipe-details [recItem]="eventVar" *ngIf="eventVar else elsepart"></app-recipe-details>
+        <ng-template #elsepart>
+            
+            <h1>Please click on the item</h1>
+        </ng-template>
+    </div>
+</div>
